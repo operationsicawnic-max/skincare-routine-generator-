@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Skincare Routine Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="container">
-    <h1>🧴 Skincare Routine Generator</h1>
-    <p>Create your personalized AM & PM routine</p>
+<div class="app">
+  <h1>✨ Your Personalized Skincare Routine</h1>
+  <p class="subtitle">Smart routines based on skin, concern & climate</p>
 
-    <form id="skinForm">
+  <form id="skinForm" class="card">
+    <div class="field">
       <label>Skin Type</label>
       <select id="skinType">
         <option value="oily">Oily</option>
@@ -19,7 +20,9 @@
         <option value="combination">Combination</option>
         <option value="sensitive">Sensitive</option>
       </select>
+    </div>
 
+    <div class="field">
       <label>Skin Concern</label>
       <select id="concern">
         <option value="acne">Acne</option>
@@ -27,21 +30,24 @@
         <option value="pigmentation">Pigmentation</option>
         <option value="aging">Aging</option>
       </select>
+    </div>
 
+    <div class="field">
       <label>Climate</label>
       <select id="climate">
         <option value="hot">Hot</option>
-        <option value="cold">Cold</option>
         <option value="humid">Humid</option>
+        <option value="cold">Cold</option>
         <option value="dry">Dry</option>
       </select>
+    </div>
 
-      <button type="submit">Generate Routine ✨</button>
-    </form>
+    <button type="submit">Generate My Routine 🌿</button>
+  </form>
 
-    <div id="result"></div>
-  </div>
+  <div id="result" class="result"></div>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
