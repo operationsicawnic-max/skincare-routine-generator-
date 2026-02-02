@@ -1,53 +1,73 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #fdf6f0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fde2e4, #e2ece9);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 40px;
+  align-items: center;
 }
 
-.container {
-  background: #ffffff;
-  padding: 25px;
-  width: 350px;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-h1 {
+.app {
+  width: 380px;
   text-align: center;
 }
 
-label {
-  display: block;
-  margin-top: 15px;
-  font-weight: bold;
+h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
 }
 
-select, button {
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.field {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+select {
   width: 100%;
   padding: 10px;
-  margin-top: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
 }
 
 button {
-  background: #ff8fa3;
-  color: white;
-  font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
   border: none;
-  margin-top: 20px;
+  background: #ff7a9c;
+  color: white;
+  font-size: 15px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #ff6f91;
+  background: #ff5c8a;
 }
 
-#result {
-  margin-top: 25px;
-  background: #fff0f3;
-  padding: 15px;
-  border-radius: 10px;
+.result {
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: left;
 }
